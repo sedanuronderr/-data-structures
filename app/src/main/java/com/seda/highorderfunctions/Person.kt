@@ -1,4 +1,4 @@
 package com.seda.highorderfunctions
 
-class Person(name:String,surname:String,val age:Int) {
+data class Person(val name:String,val surname:String,val age:Int) {
 }
