@@ -3,7 +3,7 @@ package com.seda.highorderfunctions
 fun main(){
     val myNumList = listOf<Int>(1,3,5,7,9,11,13,15)
 
-
+/*
    val allCheck= myNumList.all {it<6  }
     println(allCheck)
 
@@ -18,5 +18,7 @@ fun main(){
     println(findNum)
 //5 den büyük son eleman
     val findLastNum = myNumList.findLast { it>5 }
-    println(findLastNum)
+    println(findLastNum)*/
+
+
 }

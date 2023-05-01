@@ -29,10 +29,24 @@ people.filter { it.age > 18 }.also {
         println(person.name)
     }
 }
-        //apply
+        //apply objeleri modife etcez çok uğraşmıcaz.obje referans
 
 
-        
+  //with  argüman  geri bir şey döndürmüyor
+
+        Person1("barley",4).apply {
+            name ="Barley"
+        }.also { it.name }
+
+
+val newBarley = Person1("bar",3).apply {
+    name="Barley"
+}
+        val another= Person1("bae",3)
+   with(another){
+       name ="Bar"
+       age=3
+   }
     }
 }
 
