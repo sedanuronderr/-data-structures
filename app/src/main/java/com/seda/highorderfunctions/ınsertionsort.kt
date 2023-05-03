@@ -8,17 +8,20 @@ fun main(args: Array<String>){
     println(Arrays.toString(ınsertionsort(arrayOf(4,5,8,1,9,2,15))))
 }
 
-fun ınsertionsort(array: Array<Long>): Array<Long> {
+   fun ınsertionsort(array: Array<Long>): Array<Long> {
 
     for(i in 1 until array.size) {
-        var j = i - 1
-        var key = array[i]
-        while (j >= 0 && key < array[j]) {
-            array[j + 1] = array[j]
-         println("j"+j)
-            j--
+        var ilkdeger = i - 1
+        println("j1  $ilkdeger")
+        var ikincideger = array[i]
+
+        while (ilkdeger >= 0 && ikincideger < array[ilkdeger]) {
+            array[ilkdeger + 1] = array[ilkdeger]
+         println("j  $ilkdeger")
+            ilkdeger--
+
         }
-        array[j + 1] = key
+        array[ilkdeger + 1] = ikincideger
     }
 
     return array

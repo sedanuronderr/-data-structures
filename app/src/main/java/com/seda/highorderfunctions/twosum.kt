@@ -21,7 +21,7 @@ object  twosum {
 fun main(){
     val ar = readLine()!!.trimEnd().split(" ").map{ it.toInt() }.toTypedArray()
     var age : Int = readLine()!!.toInt()
-    val list = listOf(2,7,11,15)
+
     twosum.twoSum(ar,age)
 
 }
